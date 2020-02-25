@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo">
+
+    </p>
+    <script>
+        // apply method 
+    // var person={
+    //     fullname:function()
+    //     {
+    //         return this.firstname + " " + this.lastname;
+    //     }
+    // }
+    // var person1={
+    //     firstname:"john",
+    //     lastname:"dey"
+    // }
+    // var person2={
+    //     firstname:"shital",
+    //     lastname:"jadhav"
+    // }
+    // var x=person.fullname.apply(person1);
+    // document.getElementById("demo").innerHTML=x;
+
+    // apply method with arg:take args as an array
+
+    var person={
+        fullname:function(city,country)
+        {
+
+            return this.firstname + " " + this.lastname + "," + city +"," + country;
+        }
+    }
+    var person1={        firstname:"Shital",
+        lastname:"Jadhav"
+    }
+    var person2={
+        firstname:"john",
+        lastname:"dey"
+
+    }
+    var x=person.fullname.apply(person1,["satara","india"]);
+    document.getElementById("demo").innerHTML=x;
+
+    // max()
+    document.getElementById("demo").innerHTML = Math.max.apply(" ", [1,2,3]);
+
+    document.getElementById("demo").innerHTML = Math.max(1,2,4);
+
+    </script>
+</body>
+</html>

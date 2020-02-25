@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array=["alex","sai","shivam"];
+        console.log("value of arary",array.length);
+        for(var j=0; j<array.length; j++)
+        {
+            document.write("<br>" +array[j]);
+
+        }
+        document.write("<hr>");
+
+        var arr=["hindi","english","marathi"];
+        for(var k of arr)
+        {
+            document.write("<br>" +k);
+        }
+        document.write("<hr>");
+
+        var obj={
+            name:"sai",
+            age:25,
+        };
+        for(var k in obj)
+        {
+            console.log("value of k:",k);
+            document.write("<br>object value is:"+obj[k]);
+
+        }
+        document.write("<hr>");
+
+
+
+        var data={
+            name:"Shital",
+            age:25,
+            city:"Satara",
+            sub:["maths","english","hindi"]
+        };
+        for(var x in data)
+        {
+            
+            console.log("length of array is",Array.isArray(data[x]));
+            if(Array.isArray(data[x]))
+            {
+            for(var p of data[x])
+            {
+                document.write("<br> value of array :" +p);
+            }
+            }else{
+                document.write("<br>" +data[x]);
+
+            }
+        }
+        
+        
+        </script>
+</body>
+</html>

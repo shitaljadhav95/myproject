@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var name="Shital";
+    document.write("welcome " +  name);
+
+    var sName=["Ali","alex","felex"];/*array data*/
+
+    document.write("<br> Name of student: " + sName);
+    console.log(sName);
+    console.table(sName);
+    document.write("<br>value of name: " + sName[1]);
+
+
+    var student={
+        name:"Shital",
+        no:11,
+        isPass:true
+
+    };
+    document.write("<br>name of student is: " + student.name + "<br>roll no is: " + student.no + "<br>result is: "  + (student.isPass ? "pass" : "fail" ));
+    console.log(student);
+    console.table(student);
+    document.write("<br>value of obj" + student[name]); /*error*/
+
+
+    // document.write(name);
+
+
+
+    </script>
+</body>
+</html>

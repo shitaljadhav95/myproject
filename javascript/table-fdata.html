@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        First Name: <input type="text" id="fName"><br><br>
+        Last Name: <input type="text" id="lName"><br><br>
+        Gender: <input type="radio" id="gender" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="female">Female<br><br>
+
+
+
+
+        <input type="button" value="send Data" onclick="sendData()">
+
+    </form>
+    <table>
+        <tr>
+            <th colspan="2">
+                User Data
+            </th>
+        </tr>
+        <tr>
+            <td>First Name: </td>
+            <td id="firstName"></td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td id="lastName"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td id="genderData"></td>
+
+        </tr>
+
+    </table>
+    <script>
+    function sendData(){
+        var fName = document.getElementById("fName").value;
+        console.log(fName);
+        document.getElementById("firstName").innerHTML = fName;
+        var lName = document.getElementById("lName").value;
+        document.getElementById("lastName").innerHTML =lName;
+        var gender = document.getElementById("gender").value;
+        document.getElementById("genderData").innerHTML = gender;
+
+    }
+    // function myFunction(gender)
+    // {
+    //     document.getElementById("genderData").value = gender;
+    // }
+    </script>
+</body>
+</html>

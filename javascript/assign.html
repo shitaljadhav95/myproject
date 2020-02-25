@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var data = {
+        Name: "Shital",
+        age: 25,
+        sub: ["English", "Hindi", "Marathi"],
+        add: {
+          city: "satara",
+          pin: 312,
+          district: "Satara"
+        }
+      };
+      for (var i in data) {
+        // document.write("<br>" +data[i]);
+
+        console.log("Value of : isArray", Array.isArray(data[i]));
+        if (Array.isArray(data[i])) {
+          for (var j of data[i]) {
+            document.write("<br>value of arr : " + j);
+          }
+        } else if (typeof data[i]=="object") {
+          for (var k in data[i]) {
+            document.write("<br>  " +k +" : " + data[i][k]);
+
+          }
+        } else {
+          document.write("<br>  " + data[i]);
+        }
+        
+      }
+    </script>
+  </body>
+</html>

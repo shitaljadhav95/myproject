@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+
+        // // call method:use to invoke a method with owner object as an arg/ with object can use method belonging to another object
+        // var person={
+        //     fullname: function()
+        //     {
+        //         return this.firstname + " " + this.lastname;
+        //     }
+        // };
+        // var person1 = {
+        //     firstname: "John",
+        //     lastname: "doe" 
+        // };
+        // var person2= {
+        //     firstname: "shital",
+        //     lastname: "jadhav" 
+
+        // }
+
+        // var x =person.fullname.call(person1);
+        // document.getElementById("demo").innerHTML = x;
+
+        // call()method with args
+
+        var person={
+            fullname: function(city,country)
+            {
+                return this.firstname + " " + this.lastname + "," + city + "," + country;
+            }
+        }
+        var person1={
+            firstname:"shital",
+            lastname:"jadhav"
+        }
+        var person2={
+            firstname:"Nikita",
+            lastname:"Jadhav"
+        }
+
+        var x= person.fullname.call(person1,"satara" , "india");
+        document.getElementById("demo").innerHTML=x;
+
+    
+    
+    
+    </script>
+</body>
+</html>

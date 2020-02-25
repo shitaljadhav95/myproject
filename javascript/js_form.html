@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- show text input value -->
+    <!-- <input type="text" onkeyup="document.getElementById('demo').innerHTML = 'hello,' + this.value">
+    <p id="demo"></p> -->
+
+    <form action="#">
+        <input type="text" id="uName" >
+        <input type="button" value="show Data" onclick="showData()">
+      </form>
+      <p> Hello <span id="userName"></span></p>
+
+    <script>
+        function showData(){
+           var uName = document.getElementById("uName").value;
+        console.log(uName);
+        document.getElementById("userName").innerHTML=uName;
+
+
+        }
+        
+    
+    </script>
+
+
+
+</body>
+</html>

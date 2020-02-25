@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #body{
+            height:800px;
+            background-image: linear-gradient(to bottom right,yellow,hotpink);
+        }
+    </style>
+</head>
+<body id="body">
+    <input type="color" id="clr1" value="#ff0000" oninput="changeColor()" >
+    <input type="color" id="clr2" value="#00ff00" oninput="changeColor()">
+
+     <script>
+     function changeColor()
+     {
+        var color1= document.getElementById("clr1").value;
+         var color2= document.getElementById("clr2").value;
+         document.getElementById("body").style.backgroundImage = 
+         "linear-gradient(to bottom right,"+ color1 + "," + color2 +")";
+
+         console.log(color1);
+
+
+
+     }
+
+
+     </script>
+</body>
+</html>

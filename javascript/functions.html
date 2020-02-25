@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    // //function :to resuse code
+    // function sayHello()
+    // {
+    //     document.write("hello there...");
+    // }
+    // sayHello();
+
+    // function with paratmeter
+
+    // function sayHello(name)   //fun def
+    // {
+    //     document.write("<br> hello "  +  name  +  "..");
+    // }
+    // sayHello("Shital"); //fun calling
+
+    // sayHello("Nikita");
+    // sayHello("priyanka");
+
+    //function with para and return type
+
+    // function result(num1,num2)
+    // {
+    //     // document.write("<br> res: " + (num1 + num2) + "....");
+    //     return num1 +num2;
+
+    // }
+    // var res1 = result(10, 20); // fun calling
+    // document.write("<br><b> Res :" + res1 + "</b>");
+
+    // var res2 = result(100, 20); // fun calling
+	// document.write("<br><i> Res :" + res2 + "</i>");
+
+	// var res3 = result(1000, 283); // fun calling
+	//  document.write("<br><mark> Res :" + res3 + "</mark>");
+
+// annonymoous function
+
+//  var sayHello = function()
+//     {
+//         document.write("Hello there...");
+//     }
+//     sayHello();
+
+// arrow fun
+
+// var sayHello = () => document.write("hello there....");
+
+// sayHello();
+
+// iife fun: function in function bracket instead of calling fun
+
+// (function()
+// {
+//     document.write("hello there..");
+
+// }) ();
+
+//  ? fun function madhe function
+
+// function sum()
+// {
+//     return function()
+//     {
+//         document.write("we are in inner function");
+
+//     }
+// }
+// sum()();
+
+// function with constructor
+
+// function myFunction(arg1,arg2)
+// {
+//     this.firstnamw= arg1;
+//     this.lastname = arg2;   
+// }
+// var x = new myFunction("john", "doe");
+// document.getElementById("demo").innerHTML=x.firstnamw;
+
+// all fun are methods
+var object={
+    firstname:"Shital",
+    lastname:"Jadhav",
+    fullname: function()
+    {
+        return this.firstname + " " + this.lastname;
+    }
+}
+// var x= document.getElementById("demo").innerHTML= object.fullname;
+x=object.fullname ();
+document.getElementById("demo").innerHTML=x;
+
+
+
+    
+    </script>
+</body>
+</html>
